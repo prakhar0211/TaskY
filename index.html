@@ -23,7 +23,7 @@
     <title>TaskY</title>
 
 </head>
-<body>
+<body onload="loadInitialTaskCards">
 
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -53,7 +53,7 @@
         </div>
         <div class="modal-footer justify-content-start">
           <button type="button" class="btn btn-secondary rounded-pill" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary rounded-pill" onclick="saveChanges()">Save changes</button>
+          <button type="button" class="btn btn-primary rounded-pill" data-bs-dismiss="modal"  onclick="saveChanges()">Save changes</button>
         </div>
       </div>
     </div>
@@ -94,36 +94,7 @@
       <!-- card -->
     <section>
       <div class="row" id="task_Container">
-        <div class="col-md-6 col-lg-4">
-          <div class="card">
-            <div class="card-header d-flex justify-content-end gap-2">
-              <button type="button" class="btn btn-outline-success rounded-pill">
-                <i class="fas fa-pencil-alt"></i>
-              </button>
-              <button type="button" class="btn btn-outline-danger">
-                <i class="fas fa-trash-alt"></i>
-              </button>
-            </div>
-            <img
-              src="https://images.unsplash.com/photo-1612151855475-877969f4a6cc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGQlMjBpbWFnZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
-              </p>
-              <span class="badge bg-primary">Amazing</span>
-            </div>
-            <div class="card-footer text-muted">
-              <button type="button" class="btn btn-outline-primary rounded-pill float-end">
-                Open Task
-              </button>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </section>
   </div>
