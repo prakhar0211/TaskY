@@ -35,25 +35,25 @@
         </div>
         <div class="modal-body">
           <div class="mb-3">
-            <label for="ImageUrl" class="form-label">Image Url</label>
-            <input type="url" class="form-control" id="ImageUrl" placeholder="https://images.hello.com/image.jpg">
+            <label for="imageUrl" class="form-label">Image Url</label>
+            <input type="url" class="form-control" id="imageUrl" placeholder="https://images.hello.com/image.jpg">
           </div>
           <div class="mb-3">
-            <label for="tasktitle" class="form-label">Task Title</label>
-            <input type="text" class="form-control" id="tasktitle" placeholder="API Integration">
+            <label for="taskTitle" class="form-label">Task Title</label>
+            <input type="text" class="form-control" id="taskTitle" placeholder="API Integration">
           </div>
           <div class="mb-3">
-            <label for="tasktype" class="form-label">Task Type</label>
-            <input type="text" class="form-control" id="tasktype" placeholder="Development">
+            <label for="taskType" class="form-label">Task Type</label>
+            <input type="text" class="form-control" id="taskType" placeholder="Development">
           </div>
           <div class="mb-3">
-            <label for="taskdescription" class="form-label">Task Description</label>
-            <textarea rows="6" class="form-control" id="taskdescription" placeholder="Building an Amazing API"></textarea>
+            <label for="taskDescription" class="form-label">Task Description</label>
+            <textarea rows="6" class="form-control" id="taskDescription" placeholder="Building an Amazing API"></textarea>
           </div>
         </div>
         <div class="modal-footer justify-content-start">
           <button type="button" class="btn btn-secondary rounded-pill" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary rounded-pill">Save changes</button>
+          <button type="button" class="btn btn-primary rounded-pill" onclick="saveChanges()">Save changes</button>
         </div>
       </div>
     </div>
@@ -93,22 +93,34 @@
     </section>
       <!-- card -->
     <section>
-      <div class="row">
+      <div class="row" id="task_Container">
         <div class="col-md-6 col-lg-4">
-          <div class="cards">
+          <div class="card">
             <div class="card-header d-flex justify-content-end gap-2">
-              <button type="button" class="btn btn-outline-success rounded-pill"><i class="fas fa-pencil-alt"></i></button>
-              <button type="button" class="btn btn-outline-danger "><i class="fas fa-trash-alt"></i></button>
+              <button type="button" class="btn btn-outline-success rounded-pill">
+                <i class="fas fa-pencil-alt"></i>
+              </button>
+              <button type="button" class="btn btn-outline-danger">
+                <i class="fas fa-trash-alt"></i>
+              </button>
             </div>
-            <img src="https://images.unsplash.com/photo-1612151855475-877969f4a6cc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGQlMjBpbWFnZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
-             class="card-img-top" alt="image">
+            <img
+              src="https://images.unsplash.com/photo-1612151855475-877969f4a6cc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGQlMjBpbWFnZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-body">
               <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
               <span class="badge bg-primary">Amazing</span>
             </div>
             <div class="card-footer text-muted">
-              <button type="button" class="btn btn-outline-primary rounded-pill float-end">Open Task</button>
+              <button type="button" class="btn btn-outline-primary rounded-pill float-end">
+                Open Task
+              </button>
             </div>
           </div>
         </div>
@@ -123,5 +135,7 @@
 
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<!-- our javascript -->
+<script src="index.js"></script>
 </body>
 </html>
